@@ -1,24 +1,36 @@
-
 <header>
   <div class="container">
     <h1>Lisa's theWrx</h1>
   </div>
 </header>
-<button class="btn btn-primary">click me!</button>
+ 
+  <nav>
+  <div class="container">
+  <ul>
+    <li><a [routerLink] = "['/home']">Home</a></li>
+    <li><a [routerLink] = "['/user-admin']">User Administration</a></li>
+    <li><a [routerLink] = "['/contact-us']">Contact Us</a></li>
+    <li><a [routerLink] = "['/help']">Help</a></li>
+  </ul>
+</div>
+</nav>
 
+<!-- <div class="container">
 <h3>Tasks:</h3>
-<ol>
-  <li>
-    Create 3 main routes on the top level of the application (root-level): User Administration, Contact Us, Help (hint: Use Routes.forRoot)
-  </li>
+    <ol>
+      <li>
+        Create 3 main routes on the top level of the application (root-level): User Administration, Contact Us, Help (hint: Use Routes.forRoot)
+      </li>
+    
+      <li>
+        Unrecognized routes should re-direct the user to a 404 page (name the component PageNotFoundComponent)</li>
+    
+      <li>
+        In UserAdministrationComponent, add 3 links: Add New User, Update User, Delete User. These links should re-direct user to 3 components: AddNewUserComponent, UpdateUserComponent, DeleteUserComponent. These should be child-routes of User Administration
+      </li>
+    </ol>
+  </div> -->
 
-  <li>
-    Unrecognized routes should re-direct the user to a 404 page (name the component PageNotFoundComponent)</li>
-
-  <li>
-    In UserAdministrationComponent, add 3 links: Add New User, Update User, Delete User. These links should re-direct user to 3 components: AddNewUserComponent, UpdateUserComponent, DeleteUserComponent. These should be child-routes of User Administration
-  </li>
-</ol>
-
-
+<div class="container">
 <router-outlet></router-outlet>
+</div>
